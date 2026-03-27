@@ -1755,11 +1755,12 @@ export const ItineraryTemplate = memo(
         </div>
 
 {/* Mobile Sticky Booking Bar */}
-<div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50 px-4 py-3 shadow-lg">
+<div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50 px-4 py-2.5 shadow-lg">
   <div className="flex items-center justify-between gap-4">
-    <div className="flex flex-col">
-      <span className="text-xs font-semibold text-[#0fc2bf]">$100 off first 5 bookings</span>
-      <span className="text-sm text-muted-foreground">From</span>
+    <div className="flex flex-col leading-tight">
+      <span className="text-[11px] font-semibold text-[#0fc2bf]">
+        $100 off first 5 bookings <span className="text-muted-foreground">• From</span>
+      </span>
       <span>
         <span className="mr-2 text-lg font-bold text-slate-500 line-through">
           {data.price || "$1,399"}
