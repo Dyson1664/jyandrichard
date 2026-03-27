@@ -8,10 +8,10 @@ import { Home, Zap, Plane, Users, Soup, TreePine } from "lucide-react";
 import baliHero from "@/assets/bali/bali-hero.jpg";
 import tile1 from "@/assets/bali/tile1.jpg";
 import tile2 from "@/assets/bali/tile2.jpg";
-import tile3 from "@/assets/bali/tile3.jpeg";
-import tile4 from "@/assets/bali/tile4.jpeg";
-import tile5 from "@/assets/bali/tile5.jpeg";
-import tile6 from "@/assets/bali/tile6.jpeg";
+import tile3 from "@/assets/bali/tile3.jpg";
+import tile4 from "@/assets/bali/tile4.jpg";
+import tile5 from "@/assets/bali/tile5.jpg";
+import tile6 from "@/assets/bali/tile6.jpg";
 
 
 import day01 from "@/assets/bali/day-1.jpg";
@@ -47,14 +47,14 @@ const baliTemple =
 export const baliData = {
   id: "bali-gili-escape",
   slug: "bali",
-  title: "Black Female Travelers Bali",
+  title: "Bali & Gili Islands",
   subtitle: "Come solo. Leave with a tan, memories, and a whole new crew.",
   location: "Bali & Gili Islands, Indonesia",
   duration: "10 days",
   heroImage: baliHero,
-  price: "USD $1,169",
-  startDate: "August 14th",
-  startDateISO: "2026-08-14",
+  price: "$1,169",
+  startDate: "June 2nd",
+  startDateISO: "2026-06-02",
   route: ["Canggu", "Ubud", "Gili Islands"],
 
   tags: [
@@ -120,7 +120,7 @@ export const baliData = {
       icon: Soup,
       title: "AUTHENTIC<br />CUISINE",
       description:
-        "Daily breakfast, 1 lunch, plus a welcome dinner on Day 1.",
+        "Daily breakfast and 1 lunch.",
     },
     {
       icon: TreePine,
@@ -159,9 +159,9 @@ export const baliData = {
       location: "Canggu, Bali",
       heroImage: day01,
       description:
-        "Welcome to Bali, baby! ✈️🌴 Get picked up from the airport, check into your hotel, and switch instantly into island mode. Spend the afternoon chilling by the pool, dipping your toes in the ocean, or exploring nearby beach streets before we kick things off with our welcome dinner — drinks flowing, laughs guaranteed, friendships officially forming.",
+        "Welcome to Bali, baby! ✈️🌴 Get picked up from the airport, check into your hotel, and switch instantly into island mode. Spend the afternoon chilling by the pool, dipping your toes in the ocean, or exploring nearby beach streets before a fun first night out with the group — drinks flowing, laughs guaranteed, friendships officially forming.",
 
-      meals: "Welcome dinner",
+      meals: "",
       accommodation: { name: "Koa D Surfer, Canggu" },
       highlights: "Sunset beach walks, poolside lounging, Canggu shopping spree",
       transportation: {
@@ -289,7 +289,7 @@ export const baliData = {
     },
     {
       title: "Meals",
-      items: [{ text: "Daily breakfasts" }, { text: "1 Lunch" }, { text: "Welcome dinner (Day 1)" }],
+      items: [{ text: "Daily breakfasts" }, { text: "1 Lunch" }],
     },
     {
       title: "Transportation",

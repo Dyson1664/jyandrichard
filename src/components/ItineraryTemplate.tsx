@@ -1225,8 +1225,14 @@ const StickyBookingCard = memo(({ data }: { data: CountryData }) => {
           </div>
 
           <div className="space-y-1">
+            <p className="text-sm font-semibold text-[#0fc2bf]">$100 off first 5 bookings</p>
             <p className="text-sm text-muted-foreground">From</p>
-            <p className="text-3xl font-bold text-foreground">{data.price || "USD $1,399"}</p>
+            <p>
+              <span className="mr-2 text-2xl font-bold text-slate-500 line-through">
+                {data.price || "$1,399"}
+              </span>
+              <span className="text-xl font-extrabold text-foreground">$1,069</span>
+            </p>
           </div>
 
           {bookingUrl === "#" ? (
@@ -1507,7 +1513,7 @@ export const ItineraryTemplate = memo(
                 <div className="mb-3 flex flex-wrap items-start justify-between gap-4 px-5 md:px-10">
                   <div className="min-w-0 max-w-[40rem]">
                       <h1 className="text-3xl font-playfair font-semibold leading-none tracking-tight text-[#0fc2bf] lg:text-4xl whitespace-nowrap">
-                        Black Female Travelers Bali & Gili Islands
+                        Bali & Gili Islands
                       </h1>
 
                       <div className="mt-3 flex flex-wrap items-center gap-2">
@@ -1542,14 +1548,24 @@ export const ItineraryTemplate = memo(
                     </div>
 
                   <div className="w-full max-w-[220px] pt-1 text-right">
+                    <p className="text-sm font-semibold text-[#0fc2bf]">
+                      $100 off first 5 bookings
+                    </p>
                     <p className="text-base text-slate-700">
                       From{" "}
-                      <span className="text-2xl font-extrabold text-slate-900 lg:text-3xl">
-                        {data.price || "USD $1,399"}
+                      <span className="mr-2 text-xl font-bold text-slate-500 line-through lg:text-2xl">
+                        {data.price || "$1,399"}
+                      </span>
+                      <span className="text-xl font-extrabold text-slate-900 lg:text-2xl">
+                        $1,069
                       </span>
                     </p>
                     <div className="mt-2 inline-flex">
-                      <BookNowButton tripSlug={data.slug} label="Reserve Now $300" className="rounded-full" />
+                      <BookNowButton
+                        tripSlug={data.slug}
+                        label="Reserve Now $300"
+                        className="rounded-full px-7 py-3 text-base"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1617,7 +1633,7 @@ export const ItineraryTemplate = memo(
                 <div className="bg-primary backdrop-blur-md border border-primary rounded-lg px-4 py-2">
                   <p className="text-xs text-white/90">From</p>
                   <p className="text-xl font-bold text-white">
-                    {data.price || "USD $1,399"}
+                    {data.price || "$1,399"}
                   </p>
                 </div>
               </div>
@@ -1742,9 +1758,13 @@ export const ItineraryTemplate = memo(
 <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50 px-4 py-3 shadow-lg">
   <div className="flex items-center justify-between gap-4">
     <div className="flex flex-col">
+      <span className="text-xs font-semibold text-[#0fc2bf]">$100 off first 5 bookings</span>
       <span className="text-sm text-muted-foreground">From</span>
-      <span className="text-2xl font-bold text-foreground">
-        {data.price || "USD $1,399"}
+      <span>
+        <span className="mr-2 text-lg font-bold text-slate-500 line-through">
+          {data.price || "$1,399"}
+        </span>
+        <span className="text-xl font-extrabold text-foreground">$1,069</span>
       </span>
     </div>
 

@@ -44,7 +44,7 @@ const BOOKING_CONFIG: Record<
 > = {
   bali: {
     countryName: "Bali",
-    variantId: "45218593964211",
+    variantId: "45386780541107",
     requiresPassport: false,
     shopifyDomain: "tbff.imaginebeyondtravel.com",
   },
