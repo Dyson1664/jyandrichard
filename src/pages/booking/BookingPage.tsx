@@ -301,6 +301,9 @@ export default function BookingPage() {
             <p className="text-muted-foreground">
               Please fill in your details to continue to payment
             </p>
+            <p className="mt-2 text-base font-bold text-muted-foreground underline">
+              Deposits are non refundable.
+            </p>
           </div>
 
           <div className="mb-6 rounded-xl border border-[#0FC2BF]/30 bg-[#0FC2BF]/10 px-4 py-3 text-sm text-foreground">
